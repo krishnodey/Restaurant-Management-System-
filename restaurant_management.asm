@@ -1,87 +1,99 @@
 .MODEL LARGE
 .STACK 1000H
 .DATA
-M1 DB 10,13,10,13,'                 ****Welcome to Our Restaurants****$' 
+M1 DB 10,13,10,13,'                 ****Welcome to Our Restaurants****$',10,13 
 M2 DB 10,13,10,13,'Enter your Choise $'
 
-M3 DB 10,13,10,13,'1.Breakfast Menue$' 
-M4 DB 10,13,'2.Lunce & Dinner Menue$'
-M5 DB 10,13,'3.Snacks$'
-M6 DB 10,13,'4.Sweat Meat$'
-M7 DB 10,13,'5.Drinks$'  
+M3 DB 10,13,'  **                 1.Breakfast Menue         **$' 
+M4 DB 10,13,'  **                 2.Lunce Menue             **$'
+MS5 DB 10,13,'  **                 3.Dinner Menue            **$'
+M5 DB 10,13,'  **                 4.Snacks                  **$'
+M6 DB 10,13,'  **                 5.Sweat Meat              **$'
+M7 DB 10,13,'  **                 6.Drinks                  **$'  
                
                
 M8 DB 10,13,10,13,'***Choise your food from the menu***$'
   
-  
-M9 DB 10,13,10,13,'1.Tanduri Roti            10/-$' ;breakfast
-M10 DB 10,13,'2.Nan                     10/-$'
-M11 DB 10,13,'3.Parata                  10/-$'
-M12 DB 10,13,'4.Dal                     10/-$'
-M13 DB 10,13,'5.Mixed Vegetables        20/-$'
-M14 DB 10,13,'6.Halwa                   20/-$'
-M15 DB 10,13,'7.Luchi                   10/-$'
-M16 DB 10,13,'8.Fried Egg               20/-$'
-M17 DB 10,13,'9.Goats Feet              60/-$' 
-M18 DB 10,13,'10.Goats Brain            60/-$'
-M19 DB 10,13,'11.Chicken Bhuna Khichuri 80/-$'
-M20 DB 10,13,'12.Mutton Bhuna Khichuri  80/-$' 
-M21 DB 10,13,'13.Chicken Liver/Kolija   40/-$'
-M22 DB 10,13,'14.Goats Liver/Kolija     50/-$'
-M23 DB 10,13,'15.Chicken Vuna           70/-$'
-M24 DB 10,13,'16.Goats Vuna             70/-$'
+;BREAKFAST  
+M9 DB 10,13,'  **           1.Tanduri Roti            10/-                      **$' ;breakfast
+M10 DB 10,13,'  **           2.Nan                     10/-                      **$'
+M11 DB 10,13,'  **           3.Parata                  10/-                      **$'
+M12 DB 10,13,'  **           4.Dal                     10/-                      **$'
+M13 DB 10,13,'  **           5.Mixed Vegetables        20/-                      **$'
+M14 DB 10,13,'  **           6.Halwa                   20/-                      **$'
+M15 DB 10,13,'  **           7.Luchi                   10/-                      **$'
+M16 DB 10,13,'  **           8.Fried Egg               20/-                      **$'
+M17 DB 10,13,'  **           9.Goats Feet              60/-                      **$' 
+
  
 
 ;lunch & dinner 
 
-M25 DB 10,13,10,13,'1.Kachchi Birani(Kabab+Egg)              90/-$' 
-M26 DB 10,13,'2.Chicken Birani(Kabab+Egg)              90/-$' 
-M27 DB 10,13,'3.Plain Polaw                            30/-$' 
-M28 DB 10,13,'4.Chicken Bhuna Khichuri(with Kabab+Egg) 90/-$'
-M29 DB 10,13,'5.Mutton Bhuna Khichuri(with Kabab+Egg)  90/-$'
-M30 DB 10,13,'6.Plain Rice                             10/-$'
-M31 DB 10,13,'7.Pabda Fish                             30/-$'
-M32 DB 10,13,'8.Lobstar Big/Small                      30/-$'
-M33 DB 10,13,'9.Koi Fish                               30/-$'
-M34 DB 10,13,'10.Hilsha Fish                           60/-$'
-M35 DB 10,13,'11.Rui Fish                              60/-$'
-M36 DB 10,13,'12.Molay/Kaski Fish                      60/-$'
-M37 DB 10,13,'13.Chicken Roast                         60/-$' 
-M38 DB 10,13,'14.Egg Curry                             30/-$'
-M39 DB 10,13,'15.Vagetable                             20/-$'
-M40 DB 10,13,'16.Shirmp Mash/Bhorta                    20/-$' 
+M25 DB 10,13,'  **  1.Kachchi Birani(Kabab+Egg)              90/-                **$' 
+M26 DB 10,13,'  **  2.Chicken Birani(Kabab+Egg)              90/-                **$' 
+M27 DB 10,13,'  **  3.Plain Polaw                            30/-                **$' 
+M28 DB 10,13,'  **  4.Chicken Bhuna Khichuri(with Kabab+Egg) 90/-                **$'
+M29 DB 10,13,'  **  5.Mutton Bhuna Khichuri(with Kabab+Egg)  90/-                **$'
+M30 DB 10,13,'  **  6.Plain Rice                             10/-                **$'
+M31 DB 10,13,'  **  7.Pabda Fish                             30/-                **$'
+M32 DB 10,13,'  **  8.Lobstar Big/Small                      30/-                **$'
+M33 DB 10,13,'  **  9.Koi Fish                               30/-                **$'
+ 
 
+ 
+ 
+;DINNER
 
+M18 DB 10,13,'  **  1.Goats Brain             60/-                               **$'
+M19 DB 10,13,'  **  2.Chicken Bhuna Khichuri  80/-                               **$'
+M20 DB 10,13,'  **  3.Mutton Bhuna Khichuri   80/-                               **$' 
+M21 DB 10,13,'  **  4.Chicken Liver/Kolija    40/-                               **$'
+M22 DB 10,13,'  **  5.Goats Liver/Kolija      50/-                               **$'
+M23 DB 10,13,'  **  6.Chicken Vuna            70/-                               **$'
+M34 DB 10,13,'  **  7.Hilsha Fish             60/-                               **$'
+M35 DB 10,13,'  **  8.Rui Fish                60/-                               **$'
+M36 DB 10,13,'  **  9.Molay/Kaski Fish        60/-                               **$'
+;M37 DB 10,13,'13.Chicken Roast                         60/-$' 
+;M38 DB 10,13,'14.Egg Curry                             30/-$'
+;M39 DB 10,13,'15.Vagetable                             20/-$'
+;M40 DB 10,13,'16.Shirmp Mash/Bhorta                    20/-$'
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 ;snacks
 
-M41 DB 10,13,10,13,'1.Moghol Porata    8/-$'
-M42 DB 10,13,'2.Shami/Jali Kabab 80/-$'
-M43 DB 10,13,'3.Singara          5/-$'
-M44 DB 10,13,'4.Chicken Samucha  5/-$'
+M41 DB 10,13,'  **  1.Moghol Porata    8/-                  **$'
+M42 DB 10,13,'  **  2.Shami/Jali Kabab 80/-                 **$'
+M43 DB 10,13,'  **  3.Singara          5/-                  **$'
+M44 DB 10,13,'  **  4.Chicken Samucha  5/-                  **$'
 
 
 
 ;sweat meat
-M45 DB 10,13,10,13,'1.Faluda 50/-$' 
-M46 DB 10,13,'2.Puding 50/-$'
-M47 DB 10,13,'3.Firnni 50/-$'
-M48 DB 10,13,'4.Curd   50/-$'
+M45 DB 10,13,'  **  1.Faluda 50/-                           **$' 
+M46 DB 10,13,'  **  2.Puding 50/-                           **$'
+M47 DB 10,13,'  **  3.Firnni 50/-                           **$'
+M48 DB 10,13,'  **  4.Curd   50/-                           **$'
 
 
 
 ;Drinks
-M49 DB 10,13,10,13,'1.Shoft Drinks 8/-$'
-M50 DB 10,13,'2.Laschi       6/-$'
-M51 DB 10,13,'3.Borhani      9/-$'
-M52 DB 10,13,'4.Labang       9/-$'
-M53 DB 10,13,'5.Coffee       7/-$'
-M54 DB 10,13,'6.Tea          5/-$'
+M49 DB 10,13,'  **  1.Shoft Drinks 8/-                      **$'
+M50 DB 10,13,'  **  2.Laschi       6/-                      **$'
+M51 DB 10,13,'  **  3.Borhani      9/-                      **$'
+M52 DB 10,13,'  **  4.Labang       9/-                      **$'
+M53 DB 10,13,'  **  5.Coffee       7/-                      **$'
+M54 DB 10,13,'  **  6.Tea          5/-                      **$'
 
 
 
 ;INVALID
 M55 DB 10,13,10,13,'***&&INVALID ENTRY&&***$'
-M56 DB 10,13,'***&&Try Again&&***$'
+M56 DB 10,13,'      ***&&Try Again&&***$'
 
 
 
@@ -97,24 +109,53 @@ QUANTITY DB ?
 M60 DB 10,13,10,13,'1.Go Back to Main Menu$'
 M61 DB 10,13,'2.EXIT$'
 
+;STAR RESIZE
+
+
+MR1 DB 10,13,'  **                                           **$'
+MR2 DB 10,13,'  ***********************************************$'
+
+MR3 DB 10,13,'  **                                           **$'
+
+
+MR4 DB 10,13,'  **                                                               **$'
+MR5 DB 10,13,'  *******************************************************************$'
 
 
 
+MR6 DB 10,13,'  **                                          **$'
+MR7 DB 10,13,'  **********************************************$'
 
 
-
-
+SEJ DB 10,13,10,13,' $'
 
 .CODE
 MAIN PROC
     MOV AX,@DATA
     MOV DS,AX
-  TOP: 
+  TOP:
+  
     LEA DX,M1
     MOV AH,9
     INT 21H
-
-     
+    
+    LEA DX,SEJ ;NEWLINE
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MR2
+    MOV AH,9
+    INT 21H
+       
+    LEA DX,MR2
+    MOV AH,9
+    INT 21H     ;BORDER
+    
+    LEA DX,MR3
+    MOV AH,9
+    INT 21H   
+    
+    
      
     
     LEA DX,M3
@@ -122,6 +163,10 @@ MAIN PROC
     INT 21H
     
     LEA DX,M4
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MS5
     MOV AH,9
     INT 21H
     
@@ -134,6 +179,18 @@ MAIN PROC
     INT 21H
     
     LEA DX,M7
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MR1
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MR2
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MR2
     MOV AH,9
     INT 21H
     
@@ -152,16 +209,20 @@ MAIN PROC
     JE BREATFAST
     
     CMP BH,2
-    JE LD
-    
+    JE LD   
+     
     CMP BH,3
+    JE DINNER 
+    
+    
+    CMP BH,4
     JE SNACKS
      
      
-    CMP BH,4
+    CMP BH,5
     JE SWEATMEAT
     
-    CMP BH,5
+    CMP BH,6
     JE DRINKS
     
     
@@ -171,11 +232,28 @@ MAIN PROC
     
     
    BREATFAST:
-   
+    
+    
     LEA DX,M8    ;BREATFAST STARTS
     MOV AH,9
     INT 21H
     
+    LEA DX,SEJ ;NEWLINE
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MR5
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MR5
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MR4
+    MOV AH,9
+    INT 21H
    
     LEA DX,M9    ;item 1
     MOV AH,9
@@ -218,37 +296,20 @@ MAIN PROC
     MOV AH,9
     INT 21H
     
-    LEA DX,M18         ;10th
-    MOV AH,9
-    INT 21H 
     
-    LEA DX,M19
-    MOV AH,9              ;11th
-    INT 21H
-    
-    
-    LEA DX,M20          ;12th
+    LEA DX,MR4
     MOV AH,9
     INT 21H
     
-    LEA DX,M21
-    MOV AH,9                ;13th
-    INT 21H  
-    
-    
-    LEA DX,M22              ;14th
-    MOV AH,9
-    INT 21H 
-    
-    
-    LEA DX,M23               ;15th
+    LEA DX,MR5
     MOV AH,9
     INT 21H
     
     
-    LEA DX,M24                ;16th
+    LEA DX,MR5
     MOV AH,9
     INT 21H
+    
     
     LEA DX,M57              
     MOV AH,9
@@ -282,31 +343,31 @@ MAIN PROC
     JE TEN
     
     CMP BL,8
-    JE SIXTY 
+    JE TWENTY 
     
     CMP BL,9
     JE SIXTY
     
-    CMP BL,10
-    JE SIXTY
+    ;CMP BL,10
+    ;JE SIXTY
     
-    CMP BL,11
-    JE EIGHTY
+    ;CMP BL,11
+    ;JE EIGHTY
     
-    CMP BL,12
-    JE EIGHTY
+    ;CMP BL,12
+    ;JE EIGHTY
     
-    CMP BL,13
-    JE FOURTY
+    ;CMP BL,13
+    ;JE FOURTY
     
-    CMP BL,14
-    JE FIFTY 
+    ;CMP BL,14
+    ;JE FIFTY 
     
-    CMP BL,15
-    JE  SEVENTY
+    ;CMP BL,15
+    ;JE  SEVENTY
     
-    CMP BL,14
-    JE SEVENTY
+    ;CMP BL,14
+    ;JE SEVENTY
     
     JMP INVALID 
       
@@ -599,6 +660,27 @@ MAIN PROC
     INT 21H
     
     
+    
+    LEA DX,SEJ ;NEWLINE
+    MOV AH,9
+    INT 21H
+     
+    LEA DX,MR5
+    MOV AH,9
+    INT 21H
+    
+     
+    LEA DX,MR5
+    MOV AH,9
+    INT 21H
+                  ;STAR BORDER
+    LEA DX,MR4
+    MOV AH,9
+    INT 21H
+    
+    
+     
+    
     LEA DX,M25               ;1th
     MOV AH,9
     INT 21H 
@@ -636,33 +718,47 @@ MAIN PROC
     MOV AH,9
     INT 21H
     
-    LEA DX,M34               ;10th
-    MOV AH,9
-    INT 21H
+    ;LEA DX,M34               ;10th
+    ;MOV AH,9
+    ;INT 21H
     
     
-    LEA DX,M35               ;11th
-    MOV AH,9
-    INT 21H 
+    ;LEA DX,M35               ;11th
+    ;MOV AH,9
+    ;INT 21H 
     
-    LEA DX,M36               ;12th
-    MOV AH,9
-    INT 21H      
+    ;LEA DX,M36               ;12th
+    ;MOV AH,9
+    ;INT 21H      
        
     
-    LEA DX,M37               ;13th
-    MOV AH,9
-    INT 21H 
+    ;;LEA DX,M37               ;13th
+    ;MOV AH,9
+    ;INT 21H 
     
-    LEA DX,M38               ;13th
-    MOV AH,9
-    INT 21H 
+    ;LEA DX,M38               ;13th
+    ;MOV AH,9
+    ;INT 21H 
     
-    LEA DX,M39               ;15th
+    ;LEA DX,M39               ;15th
+    ;MOV AH,9
+    ;INT 21H
+    
+    ;LEA DX,M40               ;16th
+    ;MOV AH,9
+    ;INT 21H
+    
+    
+    LEA DX,MR4
+    MOV AH,9
+    INT 21H
+                    ;STAR BORDER
+    LEA DX,MR5
     MOV AH,9
     INT 21H
     
-    LEA DX,M40               ;16th
+    
+    LEA DX,MR5
     MOV AH,9
     INT 21H 
     
@@ -704,26 +800,26 @@ MAIN PROC
     CMP BL,9
     JE THIRTY
     
-    CMP BL,10
-    JE SIXTY
+    ;CMP BL,10
+    ;JE SIXTY
     
-    CMP BL,11
-    JE SIXTY
+    ;CMP BL,11
+    ;JE SIXTY
     
-    CMP BL,12
-    JE SIXTY
+    ;CMP BL,12
+    ;JE SIXTY
     
-    CMP BL,13
-    JE SIXTY
+    ;CMP BL,13
+    ;JE SIXTY
     
-    CMP BL,14
-    JE THIRTY 
+    ;CMP BL,14
+    ;JE THIRTY 
     
-    CMP BL,15
-    JE  TWENTY
+    ;CMP BL,15
+    ;JE  TWENTY
     
-    CMP BL,14
-    JE TWENTY
+    ;CMP BL,14
+    ;JE TWENTY
     
     JMP INVALID
     
@@ -1080,7 +1176,500 @@ MAIN PROC
     
  
     
+    JMP EXIT 
+    
+    
+    
+    
+    
+    
+    
+    
+  DINNER:
+    LEA DX,M8
+    MOV AH,9         ;DINNER STARTS
+    INT 21H
+    
+    LEA DX,SEJ ;NEWLINE
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MR5
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MR5
+    MOV AH,9
+    INT 21H      ;BORDER
+    
+    LEA DX,MR4
+    MOV AH,9
+    INT 21H
+    
+    
+    
+    LEA DX,M18         ;1th
+    MOV AH,9
+    INT 21H 
+    
+    LEA DX,M19
+    MOV AH,9              ;12th
+    INT 21H
+    
+    
+    LEA DX,M20          ;3th
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,M21
+    MOV AH,9                ;4th
+    INT 21H  
+    
+    
+    LEA DX,M22              ;5th
+    MOV AH,9
+    INT 21H 
+    
+    
+    LEA DX,M23               ;6th
+    MOV AH,9
+    INT 21H
+    
+     
+    LEA DX,M34               ;10th
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,M35               ;11th
+    MOV AH,9
+    INT 21H 
+    
+    LEA DX,M36               ;12th
+    MOV AH,9
+    INT 21H
+    
+    
+    
+    LEA DX,MR4
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MR5   ;BORDER
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MR5
+    MOV AH,9
+    INT 21H   
+    
+    
+    
+    
+    LEA DX,M57              
+    MOV AH,9
+    INT 21H 
+    
+    
+    MOV AH,1
+    INT 21H
+    MOV BL,AL
+    SUB BL,48 
+    
+    CMP BL,1
+    JE SIXTY
+    
+    CMP BL,2
+    JE EIGHTY
+    
+    CMP BL,3
+    JE EIGHTY 
+    
+    CMP BL,4
+    JE FOURTY
+    
+    CMP BL,5
+    JE FIFTY
+    
+    CMP BL,6
+    JE SEVENTY
+    
+    CMP BL,7
+    JE SIXTY
+    
+    CMP BL,8
+    JE SIXTY 
+    
+    CMP BL,9
+    JE SIXTY
+    
+   FOURTY1:
+    MOV BL,4
+    LEA DX,M58              
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,M59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    MOV DL,'0'
+    INT 21H
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+    
+    ;GO BACK TO MAIN MENU
+    
+    LEA DX,M60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,M61
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,M2
+    MOV AH,9
+    INT 21H             ;MAIN MENU
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
     JMP EXIT
+ 
+   
+    
+  FIFTY1:
+    MOV BL,4
+    LEA DX,M58              
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,M59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    MOV DL,'0'
+    INT 21H 
+    
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+           
+           
+    ;GO BACK TO MAIN MENU
+    
+    LEA DX,M60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,M61
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,M2
+    MOV AH,9
+    INT 21H 
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48    ;MAIN  MENU
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
+    JMP EXIT
+  
+    
+    
+   
+   
+   
+   
+   
+   
+   SIXTY1: 
+   
+    MOV BL,6
+   
+    LEA DX,M58              
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,M59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    MOV DL,'0'
+    INT 21H 
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+    
+    ;GO BACK TO MAIN MENU 
+    
+    LEA DX,M60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,M61
+    MOV AH,9
+    INT 21H             ;MAIN MENU
+    
+    LEA DX,M2
+    MOV AH,9
+    INT 21H 
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
+    JMP EXIT 
+    
+    
+    
+    
+   SEVENTY1:
+    MOV BL,7
+    LEA DX,M58              
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,M59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    MOV DL,'0'
+    INT 21H 
+    
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+    
+    ;GO BACK TO MAIN MENU 
+    
+    LEA DX,M60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,M61
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,M2
+    MOV AH,9
+    INT 21H       ;MAIN MENU
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
+    JMP EXIT
+         
+   EIGHTY1:
+    MOV BL,8
+    LEA DX,M58              
+    MOV AH,9
+    INT 21H 
+    
+    
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+     
+    
+    
+    MUL BL 
+    AAM 
+ 
+    MOV CX,AX 
+    ADD CH,48
+    ADD CL,48
+    
+    
+    LEA DX,M59              
+    MOV AH,9
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,CH
+    INT 21H
+    
+    
+    MOV DL,CL
+    INT 21H
+    
+    MOV DL,'0'
+    INT 21H
+    
+    ;FOR /- PRINT
+    MOV DL,47
+    INT 21H
+    MOV DL,45
+    INT 21H
+    
+    ;GO BACK TO MAIN MENU
+    
+    LEA DX,M60
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,M61
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,M2    ;MAIN MENU
+    MOV AH,9
+    INT 21H 
+    
+    MOV AH,1
+    INT 21H
+    SUB AL,48
+    
+    
+    
+    CMP AL,1
+    JE TOP
+    
+    JMP EXIT         
+    
+    JMP EXIT
+ 
+    
+    
+    
+    
+    
     
     
     
@@ -1088,6 +1677,23 @@ MAIN PROC
   SNACKS:
     LEA DX,M8
     MOV AH,9         ;SNACKS STARTS
+    INT 21H
+    
+    LEA DX,SEJ ;NEWLINE
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MR7
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MR7
+    MOV AH,9
+    INT 21H     ;BORDER
+    
+    LEA DX,MR6
+    MOV AH,9
     INT 21H
     
     
@@ -1104,6 +1710,19 @@ MAIN PROC
     INT 21H
     
     LEA DX,M44               ;4th
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MR6
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MR7
+    MOV AH,9
+    INT 21H     ;BORDER
+    
+    LEA DX,MR7
     MOV AH,9
     INT 21H 
     
@@ -1283,6 +1902,23 @@ MAIN PROC
   
     LEA DX,M8
     MOV AH,9        ;SWEAT MEAT    STARTS
+    INT 21H 
+    
+    LEA DX,SEJ ;NEWLINE
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MR7
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MR7
+    MOV AH,9
+    INT 21H     ;BORDER
+    
+    LEA DX,MR6
+    MOV AH,9
     INT 21H
     
     LEA DX,M45               ;1th
@@ -1298,6 +1934,20 @@ MAIN PROC
     INT 21H
     
     LEA DX,M48               ;4th
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MR6
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MR7
+    MOV AH,9
+    INT 21H     ;BORDER
+    
+    LEA DX,MR7
     MOV AH,9
     INT 21H
     
@@ -1390,6 +2040,23 @@ MAIN PROC
    DRINKS:  
     LEA DX,M8
     MOV AH,9            ;DRINKS STARTS
+    INT 21H 
+    
+    LEA DX,SEJ ;NEWLINE
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MR7
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MR7
+    MOV AH,9
+    INT 21H     ;BORDER
+    
+    LEA DX,MR6
+    MOV AH,9
     INT 21H
    
    
@@ -1414,6 +2081,19 @@ MAIN PROC
     INT 21H
     
     LEA DX,M54               ;6th
+    MOV AH,9
+    INT 21H
+    
+    LEA DX,MR6
+    MOV AH,9
+    INT 21H
+    
+    
+    LEA DX,MR7
+    MOV AH,9
+    INT 21H     ;BORDER
+    
+    LEA DX,MR7
     MOV AH,9
     INT 21H
     
@@ -1506,7 +2186,7 @@ MAIN PROC
     MOV DL,CL
     INT 21H 
     
-    ;FOR /- PRINT
+    
     MOV DL,47
     INT 21H
     MOV DL,45
